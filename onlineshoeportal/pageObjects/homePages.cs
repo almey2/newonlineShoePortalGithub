@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace onlineshoeportal.pageObjects
 {
-    class homePages
+    class HomePages
 
     {
         private IWebElement menu_input => propertiesCollection.driver.FindElement(By.CssSelector("#menuToggle > input[type=checkbox]"));

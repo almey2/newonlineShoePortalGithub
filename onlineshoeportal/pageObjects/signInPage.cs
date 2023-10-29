@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace onlineshoeportal.pageObjects
 {
-    class signInPage
+    class SignInPage
     {
         public static int txtuserlenght = propertiesCollection.driver.FindElements(By.Id("usr")).Count;
 

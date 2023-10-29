@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace onlineshoeportal.pageObjects
 {
-    class registration
+    class Registration
     {
         public static IWebElement btnSubmit => propertiesCollection.driver.FindElement(By.XPath("//input[@value='Submit']"));
         public static IWebElement txtFirstName => propertiesCollection.driver.FindElement(By.Id("firstName"));

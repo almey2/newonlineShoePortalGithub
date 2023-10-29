@@ -21,43 +21,43 @@ namespace onlineshoeportal.tests
             propertiesCollection.driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["URL"]);
 
 
-            homePages.click_SignInPortal();
+            HomePages.click_SignInPortal();
 
-            Assert.AreEqual(1, signInPage.txtuserlenght);
-            Assert.AreEqual(1, signInPage.txtpwdlenght);         
-            Assert.AreEqual(1, signInPage.btnlogin);           
-            Assert.AreEqual(1, signInPage.btnRegistration);
+            Assert.AreEqual(1, SignInPage.txtuserlenght);
+            Assert.AreEqual(1, SignInPage.txtpwdlenght);         
+            Assert.AreEqual(1, SignInPage.btnlogin);           
+            Assert.AreEqual(1, SignInPage.btnRegistration);
 
 
-            registration.select_salutation();
-            registration.click_Submit();
+            Registration.select_salutation();
+            Registration.click_Submit();
 
-            Assert.AreEqual("This field is required", registration.txtErrorMsg);
+            Assert.AreEqual("This field is required", Registration.txtErrorMsg);
 
-            registration.enter_Firstname();
-            registration.click_Submit();
+            Registration.enter_Firstname();
+            Registration.click_Submit();
 
-            Assert.AreEqual("This field is required", registration.txtErrorMsg);
+            Assert.AreEqual("This field is required", Registration.txtErrorMsg);
 
-            registration.enter_Lastname();
-            registration.click_Submit();
+            Registration.enter_Lastname();
+            Registration.click_Submit();
 
-            Assert.AreEqual("Enter a valid email", registration.txtErrorMsg);
+            Assert.AreEqual("Enter a valid email", Registration.txtErrorMsg);
 
-            registration.enter_InvalidEmail();
-            registration.click_Submit();
-            Assert.AreEqual("Enter a valid email", registration.txtErrorMsg2);
+            Registration.enter_InvalidEmail();
+            Registration.click_Submit();
+            Assert.AreEqual("Enter a valid email", Registration.txtErrorMsg2);
 
-            registration.enter_validEmail();
-            registration.click_Submit();
-            Assert.AreEqual("This field is required", registration.txtErrorMsg);
+            Registration.enter_validEmail();
+            Registration.click_Submit();
+            Assert.AreEqual("This field is required", Registration.txtErrorMsg);
 
-            registration.enter_UsrName();
-            registration.click_Submit();
-            Assert.AreEqual("This field is required", registration.txtErrorMsg);
+            Registration.enter_UsrName();
+            Registration.click_Submit();
+            Assert.AreEqual("This field is required", Registration.txtErrorMsg);
 
-            registration.enter_Password();
-            registration.click_Submit();
+            Registration.enter_Password();
+            Registration.click_Submit();
 
         }
     }
