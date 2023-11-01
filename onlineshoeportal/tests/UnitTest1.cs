@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 using System.Reflection;
 using System.Configuration;
 using OpenQA.Selenium.Support.UI;
-using onlineshoeportal.pageObjects;
+using onlineshoeportal.PageObjects;
 
 namespace onlineshoeportal.tests
 {
@@ -17,8 +17,8 @@ namespace onlineshoeportal.tests
         {
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddArgument("-no-sandbox");
-            propertiesCollection.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), chromeOptions);
-            propertiesCollection.driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["URL"]);
+            PropertiesCollection.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), chromeOptions);
+            PropertiesCollection.driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["URL"]);
 
 
             HomePages.click_SignInPortal();

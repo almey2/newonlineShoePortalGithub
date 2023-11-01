@@ -8,15 +8,15 @@ namespace onlineshoeportal.pageObjects
 {
     class SignInPage
     {
-        public static int txtuserlenght = propertiesCollection.driver.FindElements(By.Id("usr")).Count;
+        public static int txtuserlenght = PropertiesCollection.driver.FindElements(By.Id("usr")).Count;
 
-        public static int txtpwdlenght = propertiesCollection.driver.FindElements(By.Id("pwd")).Count;
+        public static int txtpwdlenght = PropertiesCollection.driver.FindElements(By.Id("pwd")).Count;
 
-        public static int btnlogin = propertiesCollection.driver.FindElements(By.XPath("//*[@id=\"second_form\"]/input")).Count;
+        public static int btnlogin = PropertiesCollection.driver.FindElements(By.XPath("//*[@id=\"second_form\"]/input")).Count;
 
-        public static int btnRegistration = propertiesCollection.driver.FindElements(By.Id("NewRegistration")).Count;
+        public static int btnRegistration = PropertiesCollection.driver.FindElements(By.Id("NewRegistration")).Count;
        
-        public IWebElement btnNewRegistiration => propertiesCollection.driver.FindElement(By.Id("NewRegistration"));
+        public IWebElement btnNewRegistiration => PropertiesCollection.driver.FindElement(By.Id("NewRegistration"));
 
         public void clickNewRegistiration()
         {

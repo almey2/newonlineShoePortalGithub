@@ -10,14 +10,14 @@ namespace onlineshoeportal.pageObjects
     class HomePages
 
     {
-        private IWebElement menu_input => propertiesCollection.driver.FindElement(By.CssSelector("#menuToggle > input[type=checkbox]"));
-        private IWebElement lnksignInPortal => propertiesCollection.driver.FindElement(By.CssSelector("#menu > a:nth-child(2) > li"));
+        private IWebElement menu_input =>     internal class PropertiesCollection.driver.FindElement(By.CssSelector("#menuToggle > input[type=checkbox]"));
+        private IWebElement lnksignInPortal =>     internal class PropertiesCollection.driver.FindElement(By.CssSelector("#menu > a:nth-child(2) > li"));
 
         public void click_SignInPortal()
         { 
         menu_input.Click();
 
-        propertiesCollection.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+        PropertiesCollection.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         lnksignInPortal.Click();
         }
     }

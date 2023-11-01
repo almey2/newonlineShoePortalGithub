@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace onlineshoeportal
 {
-    internal class propertiesCollection
+    internal class PropertiesCollection
     {
         public static IWebDriver driver { get; set; }
        
